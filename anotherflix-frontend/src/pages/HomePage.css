@@ -1,0 +1,9 @@
+/* No arquivo HomePage.css */
+
+.homepage {
+    background-image: url('/public/images/games/darksouls3.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    min-height: 100vh; /* Define uma altura mínima igual à altura da viewport */
+}
