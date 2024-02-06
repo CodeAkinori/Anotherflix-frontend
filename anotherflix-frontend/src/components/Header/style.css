@@ -1,0 +1,14 @@
+.header {
+    width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+}
