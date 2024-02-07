@@ -1,0 +1,35 @@
+.register-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    height: 930px;
+    box-shadow: -60px 0px 40px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 0px 0 0;
+}
+
+.form h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 20px; /* Reduz o espaço acima de cada input */
+}

@@ -1,0 +1,9 @@
+.logo {
+    position: absolute;
+    top: 20px; /* Ajuste conforme necessário */
+    left: 20px; /* Ajuste conforme necessário */
+    width: 400px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da logo */
+    z-index: 1; /* Garante que a logo fique visível sobre outros elementos */
+    box-shadow: red;
+}

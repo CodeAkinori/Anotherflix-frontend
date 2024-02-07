@@ -1,0 +1,13 @@
+/* Carousel.css */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+  
+.carousel img { /* Seleciona as imagens dentro de um .carousel-item */
+    width: 600px; /* Define a largura fixa */
+    height: 350px; /* Define a altura fixa */
+}
+  

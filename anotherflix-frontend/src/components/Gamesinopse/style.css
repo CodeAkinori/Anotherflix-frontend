@@ -1,0 +1,6 @@
+.sinopse h4 {
+    color: #ffffff; /* Cor clara do texto */
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #040404, 0 0 30px #000000, 0 0 40px #e60073, 0 0 50px #000000, 0 0 60px #000000, 0 0 100px #000000;
+    margin-left: 185px;
+    font-size: 20px;
+}
