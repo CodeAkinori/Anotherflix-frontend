@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import LoginLogo from '../components/LoginLogo'; // Ajuste o caminho conforme necessário
+import LoginForm from '../components/LoginForm';
+import BackgroundAnimation from '../components/BackgroundAnimation';
+import Banner from '../components/Banner';
+import BlackBar from '../components/BlackBar'
 
 const LoginPage = ({ onLoginSuccess }) => {
     const [username, setUsername] = useState('');
@@ -9,21 +14,26 @@ const LoginPage = ({ onLoginSuccess }) => {
         e.preventDefault();
         try {
             const response = await axios.post('http://localhost:8000/accounts/login/', { username, password });
-            // Supondo que a API retorne um token no login
             onLoginSuccess(response.data);
         } catch (error) {
             console.error('Login falhou:', error);
-            // Tratar erro de login aqui, talvez mostrar uma mensagem ao usuário
         }
     };
 
     return (
-        <div>
-            <form onSubmit={handleLogin}>
-                <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
-                <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-                <button type="submit">Login</button>
-            </form>
+        <div className="login-container">
+            <Banner/>
+            <LoginLogo />
+            <BackgroundAnimation/>
+            <BlackBar/>
+            <LoginForm 
+              username={username} 
+              password={password} 
+              setUsername={setUsername} 
+              setPassword={setPassword} 
+              handleLogin={handleLogin} 
+            />
+            <BlackBar/>
         </div>
     );
 };

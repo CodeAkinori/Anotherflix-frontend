@@ -1,0 +1,31 @@
+.banner {
+    height: 130px; /* Altura pequena */
+    width: 92%; /* Ajuste para a largura desejada */
+    margin-left: 100px;
+    margin-top: 630px;
+    background-color: #007BFF; /* Exemplo de cor de fundo */
+    color: white; /* Cor do texto */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    position: fixed; /* Necessário para o z-index funcionar */
+    z-index: 1000; /* Garante que o banner fique na frente de outros elementos */
+    background-image: radial-gradient(circle at center, #000413 0%, #0E1A4C 70%, #5D153A 100%, #87112E 200%);
+}
+
+.banner h1 {
+    font-size: 20px;
+    margin-left: 1000px;
+}
+
+.banner h2 {
+    font-size: 18px;
+    margin-left: 1000px;
+}
+
+.banner p {
+    margin-left: 1000px;
+}
+
+
+.info {
+    font-size: 13px;
+}

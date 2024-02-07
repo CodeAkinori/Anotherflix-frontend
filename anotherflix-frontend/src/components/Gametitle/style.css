@@ -1,0 +1,15 @@
+.title {
+    width: 700px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 290px;
+    margin-left: 130px;
+}
+
+.title img {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+}

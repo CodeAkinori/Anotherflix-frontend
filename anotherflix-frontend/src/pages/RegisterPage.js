@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './RegisterPage.css';
 
 const RegisterPage = () => {
     const [username, setUsername] = useState('');
@@ -25,38 +26,29 @@ const RegisterPage = () => {
     };
 
     return (
-        <div>
-            <h2>Registro</h2>
-            <form onSubmit={handleRegister}>
-                <div>
-                    <label htmlFor="username">Nome de Usuário:</label>
-                    <input
-                        type="text"
-                        id="username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                    />
-                </div>
-                <div>
-                    <label htmlFor="password">Senha:</label>
-                    <input
-                        type="password"
-                        id="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
-                </div>
-                <div>
-                    <label htmlFor="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
-                </div>
-                {/* Adicione mais campos conforme necessário */}
-                <button type="submit">Registrar</button>
+        <div className="register-container">
+            <div className="background-animation"></div>
+            <form className="form" onSubmit={handleRegister}>
+                <h2>Filmes, séries e muito mais, sem limites</h2>
+                <input
+                    type="text"
+                    placeholder="Username"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                />
+                <input
+                    type="email"
+                    placeholder="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                />
+                <input
+                    type="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                <button type="submit">Register</button>
             </form>
         </div>
     );
