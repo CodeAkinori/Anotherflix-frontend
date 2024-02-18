@@ -1,41 +1,80 @@
 .form-container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0; 
-    width: 30%;
-    background-image: linear-gradient(to top, #430303 0%, #0a0a0a 100%);
+    position: relative;
+    left: 39%;
+    width: 19%;
+    top: 60px;
     color: #fff;
-    padding: 20px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 640px;
     box-sizing: border-box;
-    box-shadow: 0 0 75px 40px rgba(255, 0, 0, 0.7), /* Sombra vermelha */
-              0 0 30px 10px rgba(0, 0, 0, 0.5); /* Sombra preta */
+    background-color: rgba(0, 0, 0, 0.751); /* cor preta com 50% de transparência */
 }
   
 
 .form-container input {
     width: calc(100% - 40px);
+    height: 40px;
     margin-bottom: 15px;
     padding: 10px;
     border: none;
     border-radius: 5px;
+    background-color: #151515; /* Cor de fundo preta */
+    color: #fff; /* Cor do texto branca */
+    font-family: Arial, Helvetica, sans-serif; /* Substitua 'Sua Fonte Personalizada' pela sua fonte desejada */
+    font-size: 16px; /* Tamanho da fonte */
 }
+
   
 .form-container button {
-    width: 400px;
+    width: calc(100% - 20px);
+    height: 50px;
     padding: 10px;
     border: none;
-    margin-left: 140px;
     border-radius: 5px;
-    background-color: #556;
+    background-color: rgb(255, 0, 0);
     color: #fff;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
 }
-  
-.form-container {
+
+.remember-me {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
+    align-items: center;
+    margin-bottom: 10px;
 }
   
+.remember-me input {
+    margin-left: 0px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #6f6f6f; /* Adicione uma borda branca para destacar a caixa de seleção */
+    border-radius: 3px; /* Adicione um leve arredondamento às bordas */
+    background-color: #000; /* Cor de fundo preta */
+}
+
+.remember-me input:checked {
+    background-color: #3f3f3f; /* Mude a cor de fundo quando a caixa de seleção estiver marcada */
+    border-color: #000; /* Mude a cor da borda quando a caixa de seleção estiver marcada */
+}
+  
+.RememberMeText {
+    margin-left: 3px;
+    margin-top: -11px;
+    color: gray;
+    font-size: 13px;
+}
+
+.infos p {
+    margin-top: 50px;
+    font-size: 17px;
+    color: gray;
+}
+
+.infos a {
+    text-decoration: none;
+    color: white;
+}

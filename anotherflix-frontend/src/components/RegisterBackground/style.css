@@ -1,0 +1,9 @@
+/* BlackBanner.css */
+.black-banner {
+    background-color: #000; /* Cor de fundo preto */
+    color: #fff; /* Cor do texto branco */
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+  

@@ -1,0 +1,25 @@
+.banner {
+    position: relative;
+    width: 100%;
+    top: 130px;
+    color: #fff;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.banner h3 {
+    margin-left: 500px;
+}
+
+.banner a {
+    text-decoration: none;
+    color: white;
+    margin-left: 500px;
+    font-size: 12px;
+}
